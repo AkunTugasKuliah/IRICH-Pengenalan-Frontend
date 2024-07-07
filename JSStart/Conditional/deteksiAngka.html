@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deteksi angka</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Demonstrasi If-Else</h2>
+    <input type="number" id="numberInput" placeholder="Masukkan sebuah angka">
+    <button onclick="checkNumber()">Cek Angka</button>
+    
+    <div id="result"></div>
+</div>
+
+<script>
+    function checkNumber() {
+        const number = parseFloat(document.getElementById('numberInput').value);
+        let result = '';
+        
+        if (number > 0) {
+            result = 'Angka tersebut adalah positif.';
+        } else if (number < 0) {
+            result = 'Angka tersebut adalah negatif.';
+        } else if (number === 0) {
+            result = 'Angka tersebut adalah nol.';
+        } else {
+            result = 'Masukkan angka yang valid.';
+        }
+        
+        document.getElementById('result').innerText = result;
+    }
+</script>
+
+</body>
+</html>

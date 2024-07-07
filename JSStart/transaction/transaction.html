@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Calculator</title>
+    <link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Order Calculator</h2>
+        
+        <div class="items-container">
+            <div class="item" data-id="1">
+                <img src="item1.jpg" alt="Item 1">
+                <div class="item-info">
+                    <h3>Item 1</h3>
+                    <p>Description of Item 1.</p>
+                    <p>Price: $10</p>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="item" data-id="2">
+                <img src="item2.jpg" alt="Item 2">
+                <div class="item-info">
+                    <h3>Item 2</h3>
+                    <p>Description of Item 2.</p>
+                    <p>Price: $15</p>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+
+        <div class="cart-container">
+            <h3>Shopping Cart</h3>
+            <ul id="cartItems"></ul>
+            <div id="totalPrice">Total: $0</div>
+            <button id="payButton">Pay</button>
+            <button id="resetButton">Reset</button>
+        </div>
+
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Enter payment amount:</p>
+                <input type="number" id="paymentAmount" placeholder="Enter amount...">
+                <button id="confirmPayment">Confirm Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="transaction.js"></script>
+</body>
+</html>

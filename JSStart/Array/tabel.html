@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Operations</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Array Operations</h2>
+    <input type="text" id="newElement" placeholder="Add new element">
+    <button onclick="addElement()">Add Element</button>
+    
+    <input type="text" id="searchElement" placeholder="Search element">
+    <button onclick="searchElement()">Search Element</button>
+    <button onclick="deleteElement()">Delete Element</button>
+    
+    <div id="arrayDisplay"></div>
+</div>
+
+<script>
+    let myArray = [];
+
+    function displayArray() {
+        const arrayDisplay = document.getElementById('arrayDisplay');
+        arrayDisplay.innerHTML = `<strong>Array Elements:</strong> [${myArray.join(', ')}]`;
+    }
+
+    function addElement() {
+        const newElement = document.getElementById('newElement').value;
+        if (newElement) {
+            myArray.push(newElement);
+            displayArray();
+            document.getElementById('newElement').value = '';
+        }
+    }
+
+    function searchElement() {
+        const searchElement = document.getElementById('searchElement').value;
+        if (searchElement) {
+            const index = myArray.indexOf(searchElement);
+            if (index !== -1) {
+                alert(`Element "${searchElement}" found at index ${index}`);
+            } else {
+                alert(`Element "${searchElement}" not found`);
+            }
+        }
+    }
+
+    function deleteElement() {
+        const searchElement = document.getElementById('searchElement').value;
+        if (searchElement) {
+            const index = myArray.indexOf(searchElement);
+            if (index !== -1) {
+                myArray.splice(index, 1);
+                alert(`Element "${searchElement}" deleted`);
+                displayArray();
+            } else {
+                alert(`Element "${searchElement}" not found`);
+            }
+        }
+    }
+
+    displayArray();
+</script>
+
+</body>
+</html>
