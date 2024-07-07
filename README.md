@@ -57,5 +57,5 @@ Masuk ke direktori proyek:
 ```bash
 cd IRICH-Pengenalan-Frontend
 ```
-Buka file HTML di browser Anda untuk memulai proyek. Anda bisa menggunakan live server seperti [url=https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer]Live Server[/url] untuk pengalaman yang lebih baik.
+Buka file HTML di browser kalian untuk memulai proyek. Anda bisa menggunakan live server seperti [Visual Studio Live Server]([https://www.google.com](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer))  untuk pengalaman yang lebih baik.
 
