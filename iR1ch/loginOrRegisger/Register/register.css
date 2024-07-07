@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0B8172;
+}
+.wrapper{
+    width: 423px;
+    background-color: #F4FEFC;
+    color: #2D2D2D;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.wrapper .logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper .logo .bounds{
+    color: #0B8172;
+    
+    background: white;
+
+
+    
+}
+.wrapper .logo .bounds h1{
+    font-family: "Rubik mono one";
+}
+.wrapper .logo .bounds h2{
+    font-family: "Rubik mono one";
+    font-size: 26px;
+}
+.wrapper .logo sub{
+    font-family: "Rubik mono one",monospace;
+    font-size: 12px;
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.wrapper .input-box input{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 10px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.wrapper .ingat-saya{
+    color: #2D2D2D;
+    display: flex;
+    font-size: 14px;
+    
+
+    margin: -0px 0 15px;
+}
+
+.wrapper .ingat-saya label input{
+    accent-color:#2D2D2D;
+    margin: 3px;
+}
+.wrapper .button-login{
+    width: 100%;
+    height: 45px;
+    background: #ffffff29;
+    border: 20px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+
+}
+.wrapper .akun-baru{
+    font-size: 3;
+    margin-top: 20px;
+    text-align: center;
+}
+.wrapper .akun-baru a{
+    
+    text-decoration: none;
+    color: black;
+
+}
+.wrapper .akun-baru a:hover{
+    text-decoration: underline;
+}

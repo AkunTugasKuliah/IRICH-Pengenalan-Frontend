@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demonstrasi Kondisional</title>
+
+</head>
+<body>
+
+    <input type="number" id="numberInput" placeholder="masukkan sebuah angka">
+    <button onclick="chekNumber()">cek angka</button>
+
+    <div id="result"></div>
+    <script>
+        function chekNumber(){
+            const angka = parseFloat(document.getElementById('numberInput').value);
+            let result = '';
+
+            if (angka > 0){
+                result = 'Angka tersebut adalah positif';
+            }
+            else if (angka < 0){
+                result = 'angka tersebut adalah negatif';
+            }
+            else if (angka === 0){
+                result = 'Angka tersebut adalah 0';
+            }
+            else{
+                result = 'masukkan angka tidak valid';
+            }
+
+            document.getElementById('result').innerText = result;
+
+        }
+    </script>
+</body>
+</html>

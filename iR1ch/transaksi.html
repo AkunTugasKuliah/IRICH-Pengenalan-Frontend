@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="transaksi/transaksi.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li>
+                            <button class="nav-button" id="transaksi-btn">
+                                <img src="Assets/transaksi.svg" alt="">
+                                <p>Transaksi</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-button" id="stok-btn">
+                                <img src="Assets/stock.svg" alt="">
+                                <p>Stok</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-button" id="laporan-btn">
+                                <img src="Assets/laporan.svg" alt="">
+                                <p>Laporan</p>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="account-info">
+                <img src="assets/user.svg" alt="Profile Picture" class="profile-pic">
+                <p>Username</p>
+                <p>Tempat</p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="dashboard">
+                <div class="search-inputs">
+                    <input type="text" id="search-barang" placeholder="Cari Barang">
+                    <input type="text" id="search-kategori" placeholder="Cari Kategori">
+                </div>
+                <div class="view-buttons">
+                    <button id="view-kotak">Tampilan Kotak</button>
+                    <button id="view-detail">Tampilan Detail</button>
+                </div>
+                <div class="item-list" id="item-list">
+                    <div class="item item-clickable" data-id="1">
+                        <img src="Asset/sampleFood.svg" alt="Item Image" class="item-img">
+                        <div class="item-details">
+                            <h3>Bakwan jagung</h3>
+                            <p>Deskripsi Barang</p>
+                            <p>Stok: 10</p>
+                            <p>Harga: Rp 2.000</p>
+                        </div>
+                    </div>
+                    <div class="item item-clickable" data-id="2">
+                        <img src="Asset/sampleFood.svg" alt="Item Image" class="item-img">
+                        <div class="item-details">
+                            <h3>Nasi Goreng</h3>
+                            <p>Deskripsi Barang</p>
+                            <p>Stok: 21</p>
+                            <p>Harga: Rp 10.000</p>
+                        </div>
+                    </div>
+                    <div class="item item-clickable" data-id="3">
+                        <img src="Asset/sampleFood.svg" alt="Item Image" class="item-img">
+                        <div class="item-details">
+                            <h3>Telur Tembalang</h3>
+                            <p>Deskripsi Barang</p>
+                            <p>Stok: 10</p>
+                            <p>Harga: Rp 8.000</p>
+                        </div>
+                    </div>
+                    <!-- Tambahkan item lainnya di sini -->
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top-buttons">
+                <button id="transaksi-btn-top">Transaksi</button>
+                <button id="keranjang-btn-top">Keranjang</button>
+            </div>
+            <div class="order-summary" id="order-summary">
+                <p>Pesanan yang Dipilih</p>
+                <!-- Pesanan akan ditampilkan di sini -->
+            </div>
+            <div class="checkout">
+                <p id="subtotal">Subtotal: Rp 0</p> 
+                <div>
+                    <input type="checkbox" id="add-cart">
+                    <label for="add-cart">Tambah ke Keranjang</label>
+                </div>
+                <div class="checkout-buttons">
+                    <button class="reset" id="reset-btn">Reset</button>
+                    <button class="pay" id="pay-btn">Bayar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menaruh script -->
+     <script src="transaksi/transaksi.js"></script>
+</body>
+</html>
